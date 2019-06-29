@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    
+    <div class="gradient">
+        {% with messages = get_flashed_messages() %}
+            {% for message in messages %}
+                <div class="alert">
+                    <strong> {{message}} </strong>
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                </div>
+            {% endfor %}
+        {% endwith %}
+        <img src="..\static\images\giant-kings__88515__04392.1552582139.jpg" class="register-image">
+        <div class="container">
+            <div class="registration-form">
+                <span class="register-header"><h2>Login</h2></span>
+                <form onsubmit="{{ url_for('register') }}" method="POST">
+                    <fieldset class="register-set">
+                        <label>Username</label>
+                        <input type="text" name="username" class="input-register">
+                    </fieldset>
+                    <fieldset class="register-set">
+                        <label>Password</label>
+                        <input type="password" name="password" class="input-register">
+                    </fieldset>
+                    <input type="submit" class="input-register">
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

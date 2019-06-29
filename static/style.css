@@ -1,0 +1,107 @@
+body {
+    background: linear-gradient(to right, white 80%, lightgrey) fixed;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation {
+    background: white;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.navitem {
+    margin: 20px;
+    color: grey;
+    float: left;
+    list-style: none;
+}
+
+.navitem_right {
+    margin: 20px;
+    color: grey;
+    float: right;
+    list-style: none;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+}
+
+.flex-container {
+    display: flex;
+    margin: auto;
+}
+
+.registration-form {
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    left: 50%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 15px;
+}
+
+.input-register {
+    width: 100%;
+    font-size: 2em;
+    border: none;
+    border-radius: 5px;
+    background: lightgrey;
+}
+
+.input-register:focus {
+    outline: none;
+}
+
+.register-set {
+    margin: auto;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.register-header {
+    text-align: center;
+}
+
+fieldset {
+    margin: auto;
+    border: none;
+    /* text-align: center; */
+}
+
+input[type=submit] {
+    margin: auto;
+    display: block;
+    width: 80%;
+    color: white;
+    background: lightgray;
+}
+
+.register-image {
+    position: fixed;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
